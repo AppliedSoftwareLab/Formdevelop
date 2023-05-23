@@ -60,5 +60,10 @@ namespace DBViewer
             this.Invalidate();
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

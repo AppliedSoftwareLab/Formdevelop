@@ -79,12 +79,13 @@ namespace DBViewer
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 50F);
-            this.label1.Location = new System.Drawing.Point(77, 23);
+            this.label1.Font = new System.Drawing.Font("굴림", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(60, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 84);
+            this.label1.Size = new System.Drawing.Size(479, 84);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Flappybird";
+            this.label1.Text = "Flappy bird";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
