@@ -64,13 +64,13 @@ namespace DBViewer
         {
             try
             {
-                string batFilePath1 = "GenerateprojectFiles.bat";
+                string batFilePath1 = "GenerateProjectFiles.bat";//폰트아틀라스or gereateProject의 path
                 // Process 객체 생성
                 System.Diagnostics.Process process1 = new System.Diagnostics.Process();
                 // Process에 실행할 파일과 인수 설정
                 process1.StartInfo.FileName = batFilePath1;
-                process1.StartInfo.UseShellExecute = false;
-                process1.StartInfo.CreateNoWindow = true;
+                process1.StartInfo.UseShellExecute = false;// 운영체제의 shell를 사용하여 열건지에 대한것 false시 사용안함
+                process1.StartInfo.CreateNoWindow = false;//프로그램 실행시 윈도우창이 열리는 지에대함 true시 윈도우 창이 표시안됨 
 
                 // Process 실행
                 process1.Start();
@@ -95,7 +95,7 @@ namespace DBViewer
         {
             try
             {
-                string batFilePath2 = "FontAtlas.bat";
+                string batFilePath2 = "GenerateProjectFiles.bat";//폰트아틀라스or gereateProject의 path
                 // Process 객체 생성
                 System.Diagnostics.Process process2 = new System.Diagnostics.Process();
                 // Process에 실행할 파일과 인수 설정
