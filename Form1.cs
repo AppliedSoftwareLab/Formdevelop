@@ -62,25 +62,32 @@ namespace DBViewer
 
         private void Generate_btn_Click(object sender, EventArgs e)
         {
-            string batFilePath = "GenerateprojectFiles.bat";
-            // Process 객체 생성
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            // Process에 실행할 파일과 인수 설정
-            process.StartInfo.FileName = batFilePath;
-            process.StartInfo.UseShellExecute = false;
-            process.StartInfo.CreateNoWindow = true;
+            try
+            {
+                string batFilePath = "GenerateprojectFiles.bat";
+                // Process 객체 생성
+                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                // Process에 실행할 파일과 인수 설정
+                process.StartInfo.FileName = batFilePath;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.CreateNoWindow = true;
 
-            // Process 실행
-            process.Start();
-            process.WaitForExit();
-            // 성공적으로 실행되었을 경우
-            if (process.ExitCode == 0)
-            {
-                MessageBox.Show("GenerateprojectFiles.bat 실행이 완료되었습니다.");
+                // Process 실행
+                process.Start();
+                process.WaitForExit();
+                // 성공적으로 실행되었을 경우
+                if (process.ExitCode == 0)
+                {
+                    MessageBox.Show("GenerateprojectFiles.bat 실행이 완료되었습니다.");
+                }
+                else
+                {
+                    MessageBox.Show("GenerateprojectFiles.bat 실행 중 오류가 발생했습니다.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("GenerateprojectFiles.bat 실행 중 오류가 발생했습니다.");
+                MessageBox.Show("GenerateprojectFiles.bat 실행 중 예외가 발생했습니다: " + ex.Message);
             }
         }
     }
