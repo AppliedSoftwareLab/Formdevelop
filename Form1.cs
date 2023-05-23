@@ -63,6 +63,8 @@ namespace DBViewer
         private void Generate_btn_Click(object sender, EventArgs e)
         {
             string batFilePath = "GenerateprojectFiles.bat";
+            // Process 객체 생성
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
         }
     }
 }
