@@ -65,14 +65,13 @@ namespace DBViewer
             this.Generate_btn.TabIndex = 4;
             this.Generate_btn.Text = "GeneateProjectFiles";
             this.Generate_btn.UseVisualStyleBackColor = true;
-            this.Generate_btn.Click += new System.EventHandler(this.Generate_btn_Click);
             // 
             // pictureBox
             // 
             this.pictureBox.ErrorImage = null;
-            this.pictureBox.Location = new System.Drawing.Point(0, 115);
+            this.pictureBox.Location = new System.Drawing.Point(0, 132);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(560, 333);
+            this.pictureBox.Size = new System.Drawing.Size(560, 316);
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
             // 
