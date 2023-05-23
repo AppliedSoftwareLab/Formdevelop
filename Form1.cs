@@ -66,17 +66,17 @@ namespace DBViewer
             {
                 string batFilePath1 = "GenerateprojectFiles.bat";
                 // Process 객체 생성
-                System.Diagnostics.Process process = new System.Diagnostics.Process();
+                System.Diagnostics.Process process1 = new System.Diagnostics.Process();
                 // Process에 실행할 파일과 인수 설정
-                process.StartInfo.FileName = batFilePath1;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.CreateNoWindow = true;
+                process1.StartInfo.FileName = batFilePath1;
+                process1.StartInfo.UseShellExecute = false;
+                process1.StartInfo.CreateNoWindow = true;
 
                 // Process 실행
-                process.Start();
-                process.WaitForExit();
+                process1.Start();
+                process1.WaitForExit();
                 // 성공적으로 실행되었을 경우
-                if (process.ExitCode == 0)
+                if (process1.ExitCode == 0)
                 {
                     MessageBox.Show("GenerateprojectFiles.bat 실행이 완료되었습니다.");
                 }
@@ -94,6 +94,12 @@ namespace DBViewer
         private void Build_btn_Click(object sender, EventArgs e)
         {
             string batFilePath2 = "FontAtlas.bat";
+            // Process 객체 생성
+            System.Diagnostics.Process process2 = new System.Diagnostics.Process();
+            // Process에 실행할 파일과 인수 설정
+            process2.StartInfo.FileName = batFilePath2;
+            process2.StartInfo.UseShellExecute = false;
+            process2.StartInfo.CreateNoWindow = true;
         }
     }
 }
