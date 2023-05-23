@@ -66,6 +66,7 @@ namespace DBViewer
             this.Generate_btn.TabIndex = 4;
             this.Generate_btn.Text = "GeneateProjectFiles";
             this.Generate_btn.UseVisualStyleBackColor = true;
+            this.Generate_btn.Click += new System.EventHandler(this.Generate_btn_Click);
             // 
             // pictureBox
             // 
@@ -82,7 +83,7 @@ namespace DBViewer
             this.label1.Font = new System.Drawing.Font("굴림", 49.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(60, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(479, 84);
+            this.label1.Size = new System.Drawing.Size(475, 83);
             this.label1.TabIndex = 6;
             this.label1.Text = "Flappy bird";
             // 

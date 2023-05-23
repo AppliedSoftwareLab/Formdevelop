@@ -59,5 +59,10 @@ namespace DBViewer
             this.Invalidate();
 
         }
+
+        private void Generate_btn_Click(object sender, EventArgs e)
+        {
+            string batFilePath = "GenerateprojectFiles.bat";
+        }
     }
 }
