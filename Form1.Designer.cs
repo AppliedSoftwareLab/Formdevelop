@@ -85,7 +85,6 @@ namespace DBViewer
             this.label1.Size = new System.Drawing.Size(479, 84);
             this.label1.TabIndex = 6;
             this.label1.Text = "Flappy bird";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
