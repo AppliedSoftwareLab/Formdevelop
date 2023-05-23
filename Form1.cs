@@ -69,6 +69,10 @@ namespace DBViewer
             process.StartInfo.FileName = batFilePath;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.CreateNoWindow = true;
+
+            // Process 실행
+            process.Start();
+            process.WaitForExit();
         }
     }
 }
