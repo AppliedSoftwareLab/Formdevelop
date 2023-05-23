@@ -90,6 +90,7 @@ namespace DBViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(192)))), ((int)(((byte)(202)))));
             this.ClientSize = new System.Drawing.Size(560, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Generate_btn);
@@ -98,7 +99,7 @@ namespace DBViewer
             this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "DBViewr";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
