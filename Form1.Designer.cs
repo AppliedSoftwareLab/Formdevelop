@@ -46,6 +46,7 @@ namespace DBViewer
             this.Build_btn.TabIndex = 2;
             this.Build_btn.Text = "Build";
             this.Build_btn.UseVisualStyleBackColor = true;
+            this.Build_btn.Click += new System.EventHandler(this.Build_btn_Click);
             // 
             // Reload_btn
             // 

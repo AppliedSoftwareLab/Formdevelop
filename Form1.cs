@@ -64,11 +64,11 @@ namespace DBViewer
         {
             try
             {
-                string batFilePath = "GenerateprojectFiles.bat";
+                string batFilePath1 = "GenerateprojectFiles.bat";
                 // Process 객체 생성
                 System.Diagnostics.Process process = new System.Diagnostics.Process();
                 // Process에 실행할 파일과 인수 설정
-                process.StartInfo.FileName = batFilePath;
+                process.StartInfo.FileName = batFilePath1;
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.CreateNoWindow = true;
 
@@ -89,6 +89,11 @@ namespace DBViewer
             {
                 MessageBox.Show("GenerateprojectFiles.bat 실행 중 예외가 발생했습니다: " + ex.Message);
             }
+        }
+
+        private void Build_btn_Click(object sender, EventArgs e)
+        {
+            string batFilePath2 = "FontAtlas.bat";
         }
     }
 }
