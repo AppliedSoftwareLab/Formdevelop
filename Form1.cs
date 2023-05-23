@@ -31,5 +31,18 @@ namespace DBViewer
         }
         Bitmap bit;
 
-  
+        protected override void OnLoad(EventArgs e)
+
+        {
+
+            bit = new Bitmap("bird3.gif");
+
+            ImageAnimator.Animate(bit, new EventHandler(this.OnFrameChanged));
+
+            base.OnLoad(e);
+
+        }
+
+   
+    }
 }
