@@ -32,7 +32,8 @@ namespace DBViewer
             this.Build_btn = new System.Windows.Forms.Button();
             this.Reload_btn = new System.Windows.Forms.Button();
             this.Generate_btn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Build_btn
@@ -66,26 +67,29 @@ namespace DBViewer
             this.Generate_btn.UseVisualStyleBackColor = true;
             this.Generate_btn.Click += new System.EventHandler(this.Generate_btn_Click);
             // 
-            // panel1
+            // pictureBox
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(590, 159);
-            this.panel1.TabIndex = 5;
+            this.pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(582, 450);
+            this.pictureBox.TabIndex = 5;
+            this.pictureBox.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 450);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(582, 450);
             this.Controls.Add(this.Generate_btn);
             this.Controls.Add(this.Reload_btn);
             this.Controls.Add(this.Build_btn);
+            this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,7 +99,7 @@ namespace DBViewer
         private System.Windows.Forms.Button Build_btn;
         private System.Windows.Forms.Button Reload_btn;
         private System.Windows.Forms.Button Generate_btn;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
 
