@@ -33,6 +33,7 @@ namespace DBViewer
             this.Reload_btn = new System.Windows.Forms.Button();
             this.Generate_btn = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,11 +76,21 @@ namespace DBViewer
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(226, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 15);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Generate_btn);
             this.Controls.Add(this.Reload_btn);
             this.Controls.Add(this.Build_btn);
@@ -90,6 +101,7 @@ namespace DBViewer
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,6 +111,7 @@ namespace DBViewer
         private System.Windows.Forms.Button Reload_btn;
         private System.Windows.Forms.Button Generate_btn;
         private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
