@@ -43,6 +43,26 @@ namespace DBViewer
 
         }
 
-   
+        protected override void OnPaint(PaintEventArgs e)
+
+        {
+
+            ImageAnimator.UpdateFrames();
+
+            Graphics g = pictureBox.CreateGraphics();
+
+            g.DrawImage(this.bit, new Point(0, 0));
+
+            base.OnPaint(e);
+
+        }
+
+        private void OnFrameChanged(object sender, EventArgs e)
+
+        {
+
+            this.Invalidate();
+
+        }
     }
 }
