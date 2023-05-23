@@ -39,9 +39,9 @@ namespace DBViewer
             // Build_btn
             // 
             this.Build_btn.Font = new System.Drawing.Font("HY헤드라인M", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Build_btn.Location = new System.Drawing.Point(56, 366);
+            this.Build_btn.Location = new System.Drawing.Point(91, 364);
             this.Build_btn.Name = "Build_btn";
-            this.Build_btn.Size = new System.Drawing.Size(455, 60);
+            this.Build_btn.Size = new System.Drawing.Size(380, 60);
             this.Build_btn.TabIndex = 2;
             this.Build_btn.Text = "Build";
             this.Build_btn.UseVisualStyleBackColor = true;
@@ -49,9 +49,9 @@ namespace DBViewer
             // Reload_btn
             // 
             this.Reload_btn.Font = new System.Drawing.Font("HY헤드라인M", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Reload_btn.Location = new System.Drawing.Point(56, 283);
+            this.Reload_btn.Location = new System.Drawing.Point(91, 275);
             this.Reload_btn.Name = "Reload_btn";
-            this.Reload_btn.Size = new System.Drawing.Size(455, 62);
+            this.Reload_btn.Size = new System.Drawing.Size(380, 62);
             this.Reload_btn.TabIndex = 3;
             this.Reload_btn.Text = "HotReload";
             this.Reload_btn.UseVisualStyleBackColor = true;
@@ -59,9 +59,9 @@ namespace DBViewer
             // Generate_btn
             // 
             this.Generate_btn.Font = new System.Drawing.Font("HY헤드라인M", 20F, System.Drawing.FontStyle.Bold);
-            this.Generate_btn.Location = new System.Drawing.Point(56, 197);
+            this.Generate_btn.Location = new System.Drawing.Point(91, 180);
             this.Generate_btn.Name = "Generate_btn";
-            this.Generate_btn.Size = new System.Drawing.Size(455, 66);
+            this.Generate_btn.Size = new System.Drawing.Size(380, 66);
             this.Generate_btn.TabIndex = 4;
             this.Generate_btn.Text = "GeneateProjectFiles";
             this.Generate_btn.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@ namespace DBViewer
             // 
             // pictureBox
             // 
-            this.pictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox.ErrorImage = null;
+            this.pictureBox.Location = new System.Drawing.Point(0, 115);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(582, 450);
+            this.pictureBox.Size = new System.Drawing.Size(560, 333);
             this.pictureBox.TabIndex = 5;
             this.pictureBox.TabStop = false;
             // 
@@ -80,7 +80,7 @@ namespace DBViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 450);
+            this.ClientSize = new System.Drawing.Size(560, 450);
             this.Controls.Add(this.Generate_btn);
             this.Controls.Add(this.Reload_btn);
             this.Controls.Add(this.Build_btn);

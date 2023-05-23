@@ -15,7 +15,9 @@ namespace DBViewer
         public Form1()
         {
             InitializeComponent();
-            InitializePictureBox();
+            //this.StartPosition = FormStartPosition;
+
+
         }
 
         private void Generate_btn_Click(object sender, EventArgs e)
@@ -25,22 +27,9 @@ namespace DBViewer
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+        Bitmap bit;
 
-        }
-        private void InitializePictureBox()
-        {
-            pictureBox = new PictureBox();
-            pictureBox.Location = new Point(0, 0);
-            pictureBox.SizeMode = PictureBoxSizeMode.AutoSize;
-            pictureBox.ImageLocation = "bird.gif";
-            pictureBox.LoadCompleted += PictureBox_LoadCompleted;
-            Controls.Add(pictureBox);
-        }
-        private void PictureBox_LoadCompleted(object sender, AsyncCompletedEventArgs e)
-        {
-            pictureBox.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
-            pictureBox.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
-        }
-
-    }
+  
 }
