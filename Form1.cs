@@ -65,6 +65,10 @@ namespace DBViewer
             string batFilePath = "GenerateprojectFiles.bat";
             // Process 객체 생성
             System.Diagnostics.Process process = new System.Diagnostics.Process();
+            // Process에 실행할 파일과 인수 설정
+            process.StartInfo.FileName = batFilePath;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.CreateNoWindow = true;
         }
     }
 }
