@@ -100,6 +100,10 @@ namespace DBViewer
             process2.StartInfo.FileName = batFilePath2;
             process2.StartInfo.UseShellExecute = false;
             process2.StartInfo.CreateNoWindow = true;
+
+            // Process 실행
+            process2.Start();
+            process2.WaitForExit();
         }
     }
 }
