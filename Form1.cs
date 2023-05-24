@@ -107,7 +107,9 @@ namespace DBViewer
                 startInfo.UseShellExecute = false;
 
                 Process process2 = new Process();
+                process2.StartInfo = startInfo;
+                process2.Start();
 
-        }
+
     }
 }
