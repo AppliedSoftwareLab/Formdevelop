@@ -63,12 +63,13 @@ namespace DBViewer
 
         private void Generate_btn_Click(object sender, EventArgs e)
         {
-            string workingDirectory1 = @"C:\Users\user\Desktop\rere\FlappyBird2D";
+            string workingDirectory2 = @"C:\Users\user\Desktop\rere\FlappyBird2D";
             string batFilePath2 = @"C:\Users\user\Desktop\rere\FlappyBird2D\GenerateProjectFiles.bat";
             string arguments2 = "vs2019";
             try
             {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
+                ProcessStartInfo startInfo2 = new ProcessStartInfo();
+                startInfo2.WorkingDirectory = workingDirectory2;
 
             }
             catch (Exception ex)
