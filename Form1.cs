@@ -70,6 +70,9 @@ namespace DBViewer
             {
                 ProcessStartInfo startInfo2 = new ProcessStartInfo();
                 startInfo2.WorkingDirectory = workingDirectory2;
+                startInfo2.FileName = "cmd.exe";
+                startInfo2.RedirectStandardInput = true;
+                startInfo2.UseShellExecute = false;
 
             }
             catch (Exception ex)
