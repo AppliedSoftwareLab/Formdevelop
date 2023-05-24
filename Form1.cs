@@ -111,6 +111,9 @@ namespace DBViewer
                 process2.Start();
                 // "cd" 명령 실행
                 process2.StandardInput.WriteLine($"cd {workingDirectory}");
+                // "GenerateProjectFiles.bat" 명령 실행
+                process2.StandardInput.WriteLine($"{batFilePath} {arguments}");
+
 
 
         }
