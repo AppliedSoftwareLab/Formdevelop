@@ -98,7 +98,7 @@ namespace DBViewer
             }
             catch (Exception ex)
             {
-
+                MessageBox.Show("GenerateprojectFiles.bat 실행 중 예외가 발생했습니다: " + ex.Message);
             }
         }
 
