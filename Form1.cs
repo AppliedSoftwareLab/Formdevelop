@@ -63,6 +63,7 @@ namespace DBViewer
 
         private void Generate_btn_Click(object sender, EventArgs e)
         {
+            string workingDirectory1 = @"C:\Users\user\Desktop\rere\FlappyBird2D";
 
         }
 
