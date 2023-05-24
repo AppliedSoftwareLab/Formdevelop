@@ -74,6 +74,10 @@ namespace DBViewer
                 startInfo2.RedirectStandardInput = true;
                 startInfo2.UseShellExecute = false;
 
+                Process process1 = new Process();
+                process1.StartInfo = startInfo2;
+                process1.Start();
+
             }
             catch (Exception ex)
             {
