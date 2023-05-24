@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace DBViewer
 {
@@ -64,7 +65,7 @@ namespace DBViewer
         {
             try
             {
-                string batFilePath1 = "GenerateProjectFiles.bat";//폰트아틀라스or gereateProject의 path
+                string batFilePath1 = "asd.bat";//폰트아틀라스or gereateProject의 path
                 // Process 객체 생성
                 System.Diagnostics.Process process1 = new System.Diagnostics.Process();
                 // Process에 실행할 파일과 인수 설정
@@ -93,34 +94,7 @@ namespace DBViewer
 
         private void Build_btn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string batFilePath2 = "GenerateProjectFiles.bat";//폰트아틀라스or gereateProject의 path
-                // Process 객체 생성
-                System.Diagnostics.Process process2 = new System.Diagnostics.Process();
-                // Process에 실행할 파일과 인수 설정
-                process2.StartInfo.FileName = batFilePath2;
-                process2.StartInfo.UseShellExecute = false;
-                process2.StartInfo.CreateNoWindow = true;
-
-                // Process 실행
-                process2.Start();
-                process2.WaitForExit();
-
-                // 성공적으로 실행되었을 경우
-                if (process2.ExitCode == 0)
-                {
-                    MessageBox.Show("GenerateprojectFiles.bat 실행이 완료되었습니다.");
-                }
-                else
-                {
-                    MessageBox.Show("GenerateprojectFiles.bat 실행 중 오류가 발생했습니다.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("GenerateprojectFiles.bat 실행 중 예외가 발생했습니다: " + ex.Message);
-            }
+ 
         }
     }
 }
