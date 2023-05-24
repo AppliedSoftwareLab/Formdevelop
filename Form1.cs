@@ -65,8 +65,15 @@ namespace DBViewer
         {
             string workingDirectory1 = @"C:\Users\user\Desktop\rere\FlappyBird2D";
             string batFilePath2 = @"C:\Users\user\Desktop\rere\FlappyBird2D\GenerateProjectFiles.bat";
-            string arguments = "vs2019";
+            string arguments2 = "vs2019";
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void Build_btn_Click(object sender, EventArgs e)
