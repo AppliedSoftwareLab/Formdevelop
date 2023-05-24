@@ -68,6 +68,7 @@ namespace DBViewer
             string arguments2 = "vs2019";
             try
             {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
 
             }
             catch (Exception ex)
