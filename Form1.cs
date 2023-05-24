@@ -109,7 +109,11 @@ namespace DBViewer
                 Process process2 = new Process();
                 process2.StartInfo = startInfo;
                 process2.Start();
+                // "cd" 명령 실행
+                process2.StandardInput.WriteLine($"cd {workingDirectory}");
 
+
+        }
 
     }
 }
