@@ -77,6 +77,8 @@ namespace DBViewer
                 Process process1 = new Process();
                 process1.StartInfo = startInfo2;
                 process1.Start();
+                // "cd" 명령 실행
+                process1.StandardInput.WriteLine($"cd {workingDirectory2}");
 
             }
             catch (Exception ex)
