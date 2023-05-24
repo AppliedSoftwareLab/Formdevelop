@@ -101,6 +101,12 @@ namespace DBViewer
             try
             {
                 ProcessStartInfo startInfo = new ProcessStartInfo();
+                startInfo.WorkingDirectory = workingDirectory;
+                startInfo.FileName = "cmd.exe";
+                startInfo.RedirectStandardInput = true;
+                startInfo.UseShellExecute = false;
+
+                Process process2 = new Process();
 
         }
     }
