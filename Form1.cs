@@ -98,6 +98,9 @@ namespace DBViewer
             string batFilePath = @"C:\Users\user\Desktop\rere\FlappyBird2D\GenerateProjectFiles.bat";
             string arguments = "vs2019";
 
+            try
+            {
+                ProcessStartInfo startInfo = new ProcessStartInfo();
 
         }
     }
