@@ -79,6 +79,10 @@ namespace DBViewer
                 process1.Start();
                 // "cd" 명령 실행
                 process1.StandardInput.WriteLine($"cd {workingDirectory2}");
+                // "GenerateProjectFiles.bat" 명령 실행
+                process1.StandardInput.WriteLine($"{batFilePath2} {arguments2}");
+                process1.StandardInput.Flush();
+                process1.StandardInput.Close();
 
             }
             catch (Exception ex)
