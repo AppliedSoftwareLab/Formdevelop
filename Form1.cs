@@ -31,7 +31,7 @@ namespace DBViewer
 
         {
 
-            bit = new Bitmap("bird3.gif");
+            bit = new Bitmap("bird3.gif");//bin 폴더에 Debug폴더에 .exe파일 있으면 거기다가 넣어주세요
 
             ImageAnimator.Animate(bit, new EventHandler(this.OnFrameChanged));
 
