@@ -104,9 +104,9 @@ namespace DBViewer
 
         private void Build_btn_Click(object sender, EventArgs e)
         {
-            string workingDirectory = @"C:\Users\user\Desktop\rere\FlappyBird2D";
-            string batFilePath = @"C:\Users\user\Desktop\rere\FlappyBird2D\GenerateProjectFiles.bat";
-            string arguments = "vs2019";
+            string workingDirectory = @"C:\Users\user\Desktop\rere\FlappyBird2D";//cd 명령어로 이동할 폴더
+            string batFilePath = @"C:\Users\user\Desktop\rere\FlappyBird2D\GenerateProjectFiles.bat";//GenerateProjecFiles.bat까지 경로에 적어줘야함
+            string arguments = "vs2019";//해당 명령인자
 
             try
             {
